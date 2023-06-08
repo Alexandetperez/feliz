@@ -1,0 +1,81 @@
+<!-- feliz_cumpleanos.html -->
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Feliz Cumpleaños</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #ff6666; /* Color rojizo */
+      animation: moveText 2s infinite alternate;
+    }
+
+    @keyframes moveText {
+      0% {
+        transform: translateX(-10px);
+      }
+      100% {
+        transform: translateX(10px);
+      }
+    }
+
+    p {
+      color: #666666;
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    .person-name {
+      color: #ff6666; /* Color rojizo */
+    }
+
+    #chat-container {
+      border: 1px solid #ccc;
+      padding: 10px;
+      max-height: 300px;
+      overflow-y: scroll;
+      margin-bottom: 20px;
+    }
+
+    #user-input {
+      width: 100%;
+      padding: 5px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Feliz Cumpleaños</h1>
+ 
+    <p>Querida <span class="person-name">{{ Maythe }}</span>,</p>
+    <p>¡En este día tan especial, quería desearte un muy feliz cumpleaños! Que este nuevo año de tu vida esté lleno de alegría, amor y éxito. Espero que disfrutes cada momento y que todos tus deseos se hagan 
+     realidad.</p>
+    <p>Que este día esté rodeado de seres queridos y amigos que te llenen de cariño y te hagan sentir especial. Te deseo lo mejor en todas tus metas y que sigas alcanzando tus sueños.</p>
+    <p>¡Que tengas un cumpleaños maravilloso y un año fantástico por delante!</p>
+    <p>Un abrazo,</p>
+    <p>{{ Alexander }}</p>
+    <audio>
+      <source src="{% static 'img/Lasmana.mp3' %}" type="audio/mpeg" autoplay>
+    </audio>
+    <img src="{% static 'img/feliz.png' %}" alt="Icono Feliz" width="70" height="70">
+  </div>
+</body>
+</html>
+
