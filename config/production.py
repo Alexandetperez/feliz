@@ -13,7 +13,7 @@ CSRF_TRUSTED_ORIGINS = (
     else []
 )
 
-DEBUG = True
+DEBUG = False
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
