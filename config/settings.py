@@ -120,5 +120,5 @@ STATIC_URL = "/static/"
 
 # Añade esta línea para incluir la carpeta 'static' de la aplicación 'birthday'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "birthday/static"),
+    os.path.join(BASE_DIR, "static"),
 ]
